@@ -6,6 +6,7 @@ import Anshulimg from "../../assets/devloper1.jpeg";
 import Vishwasimg from "../../assets/devloper2.jpg";
 import Satwikimg from "../../assets/devloper3.jpg";
 import Sumitimg from "../../assets/devloper4.jpg";
+import Footer from "../footer/Footer";
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 
 
@@ -82,6 +83,7 @@ const About = () => {
                 </div>
             </section>
         </div>
+        <Footer/>
         </>
     );
 };

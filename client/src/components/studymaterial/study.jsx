@@ -1,6 +1,7 @@
 import React from 'react';
 import './study.css';
 import Navbar from "../navbar/Navbar"
+import Footer from "../footer/Footer";
 function Study() {
   return (
    <>
@@ -87,6 +88,7 @@ function Study() {
         </div>
       </section>
     </div>
+    <Footer/>
    </>
   );
 }

@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSocket } from "../context/SocketProvider";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 import './Lobby.css';
 
 const LobbyScreen = () => {
@@ -86,6 +87,7 @@ const LobbyScreen = () => {
       </form>
     </div>
     </div>
+    <Footer/>
     </>
   );
 };
