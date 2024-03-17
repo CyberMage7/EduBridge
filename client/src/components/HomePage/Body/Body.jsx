@@ -7,7 +7,6 @@ import quizimg from "../../../assets/asset 14.svg";
 import videoimg from "../../../assets/asset 15.svg";
 import donateimg from "../../../assets/video-call.png";
 import doubtimg from "../../../assets/asset 16.svg";
-import {Link} from "react-router-dom";
 
 function Body() {
   const [typeEffect] = useTypewriter({
@@ -32,7 +31,7 @@ function Body() {
       <section id="hero">
         <div className="text-content">
           <h2>Welcome to <span>LearnHub</span></h2>
-          <h4>where</h4>
+          {/* <h4>where</h4> */}
           <h1>Learning is
             <span>{typeEffect}</span></h1>
         </div>
@@ -53,9 +52,7 @@ function Body() {
               <p>
                 Study at your own pace with the Guide Books by NCERT all at one place.
               </p>
-              <Link to='/study'>
-              <a className="secondary-button lea">Learn More <i className="fa-solid fa-right-long"></i></a>
-              </Link>
+              <a href="/study" className="secondary-button lea">Learn More <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={scholarimg} alt="s2" id="sc-img" />
@@ -63,9 +60,7 @@ function Body() {
               <p>
                 Get To Know About Various Government ScholarShips.
               </p>
-              <Link to='/scholarship'>
-              <a className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
-              </Link>
+              <a href="scholarship" className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={quizimg} alt="s3" />
@@ -81,9 +76,7 @@ function Body() {
               <p>
                 Explore key concepts through engaging, informative videos with expert instruction.
               </p>
-              <Link to='video'>
-              <a className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
-              </Link>
+              <a href='/video' className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={donateimg} alt="s5" id="sc-img" style={{ height: '71px' }} />
@@ -91,9 +84,7 @@ function Body() {
               <p>
               Elevate your learning experience through face-to-face video calls with peers.
               </p>
-              <Link to='/lobby'>
-              <a className="secondary-button" style={{ marginBottom: '8px' }}>Learn more <i className="fa-solid fa-right-long"></i></a>
-              </Link>
+              <a href="/lobby" className="secondary-button" style={{ marginBottom: '8px' }}>Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={doubtimg} alt="s6" />

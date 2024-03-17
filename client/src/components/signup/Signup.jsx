@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./signup.css";
 import { Link ,useNavigate} from "react-router-dom";
 import axios from "axios";
-import Navbar from "../navbar/Navbar";
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
 
 function Signup() {
@@ -36,7 +35,6 @@ function Signup() {
 
   return (
     <>
-    <Navbar/>
     <div className="body-signup">
       <div className="wrapper-signup">
         <div className="signup-box">

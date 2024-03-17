@@ -3,7 +3,6 @@ import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FaEnvelope, FaLock } from 'react-icons/fa';
-import Navbar from "../navbar/Navbar";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -33,7 +32,6 @@ function Login() {
 
   return (
     <>
-    <Navbar/>
     <div className="body-login">
       <div className="wrapper-login">
         <div className="login-box">

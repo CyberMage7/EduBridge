@@ -6,6 +6,8 @@ import Anshulimg from "../../assets/devloper1.jpeg";
 import Vishwasimg from "../../assets/devloper2.jpg";
 import Satwikimg from "../../assets/devloper3.jpg";
 import Sumitimg from "../../assets/devloper4.jpg";
+import { FaGithub,FaLinkedin } from "react-icons/fa";
+
 
 const About = () => {
     return (
@@ -30,14 +32,21 @@ const About = () => {
             </section>
 
             <section id="develop">
+            <div className="features-header">
+            <h2 className="features-heading-text underline1 op">Meet Our Developers</h2>
+          </div>
+    
                 <div className="dev-container">
                     <div className="pro">
                         <img src={Vishwasimg} alt="" />
                         <div className="des">
                             <span>Vishwas Mishra</span>
                             <h4>Full-Stack Developer</h4>
-                            <a href="https://github.com/CyberMage7"><i className="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/vishwas-mishra-4b6315257/"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/CyberMage7">
+                                {/* <i className="fab fa-github"></i> */}
+                                <FaGithub/>
+                                </a>
+                            <a href="https://www.linkedin.com/in/vishwas-mishra-4b6315257/"><FaLinkedin/></a>
                         </div>
                     </div>
 
@@ -46,8 +55,8 @@ const About = () => {
                         <div className="des">
                             <span>Anshul Kansal</span>
                             <h4>Full-Stack Developer</h4>
-                            <a href="https://github.com/anshulkansal04/"><i className="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/anshul-kansal-5740a2254/"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/anshulkansal04/"><FaGithub/></a>
+                            <a href="https://www.linkedin.com/in/anshul-kansal-5740a2254/"><FaLinkedin/></a>
                         </div>
                     </div>
 
@@ -56,8 +65,8 @@ const About = () => {
                         <div className="des">
                             <span>Satwik Pandey</span>
                             <h4>Front-End Developer</h4>
-                            <a href="https://github.com/worldisconfusion"><i className="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/satwik-p-770516251/"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/worldisconfusion"><FaGithub/></a>
+                            <a href="https://www.linkedin.com/in/satwik-p-770516251/"><FaLinkedin/></a>
                         </div>
                     </div>
 
@@ -66,8 +75,8 @@ const About = () => {
                         <div className="des">
                             <span>Sumit Khemka</span>
                             <h4>Front-End Developer</h4>
-                            <a href="https://github.com/SumitKhemka123"><i className="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/in/sumit-khemka/"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/SumitKhemka123"><FaGithub/></a>
+                            <a href="https://www.linkedin.com/in/sumit-khemka/"><FaLinkedin/></a>
                         </div>
                     </div>
                 </div>

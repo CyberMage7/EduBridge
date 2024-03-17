@@ -46,7 +46,7 @@
 .li-navbar:hover {
 	cursor: pointer;
 	text-decoration: underline;
-	animation: capitalizeText 0.3s ease forwards;
+	animation: capitalizeText 0.5s ease forwards;
 	/* Use animation */
 }
 

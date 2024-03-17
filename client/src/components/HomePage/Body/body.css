@@ -65,20 +65,25 @@
     align-items: flex-start;
     text-align: left;
     z-index: 1;
+
 }
 
-#hero h4 {
+/* #hero h4 {
     padding-bottom: 15px;
     font-size: 30px;
-}
+    font-weight: 500;
+} */
 
 #hero h2 {
     font-size: 50px;
+    font-weight: lighter;
 }
 
 #hero h1 {
     font-size: 50px;
     color: #088178;
+    font-weight: 50;
+    /* padding-top: 20px ; */
 }
 
 #hero p {
@@ -220,6 +225,7 @@ body {
     margin-bottom: 10px;
     color: #219ebc;
     font-size: 3rem;
+    font-weight: 500;
 }
 
 .features-area {
@@ -258,7 +264,7 @@ body {
 .features-card a {
     color: rgb(0, 99, 228);
     text-decoration: none;
-    margin-top: 1em;
+    /* margin-top: 1em; */
     display: inline-block;
     padding: .5em;
     margin-left: -.5em;

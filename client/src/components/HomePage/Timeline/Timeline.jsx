@@ -18,7 +18,7 @@ function Timeline() {
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
         // contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="4th December 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -37,7 +37,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="3rd December 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -53,7 +53,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="3 September 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -72,7 +72,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--work"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="26th November 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -91,7 +91,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="21 April 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -110,7 +110,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="21 April 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
@@ -127,7 +127,7 @@ function Timeline() {
 
       <VerticalTimelineElement
         className="vertical-timeline-element--education"
-        contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
+        contentArrowStyle={{ borderRight: "30px solid  rgb(33, 150, 243)" }}
         date="7 November 2024"
         iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         icon={<SchoolIcon />}
