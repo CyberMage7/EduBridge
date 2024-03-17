@@ -3,6 +3,7 @@ import './Yts.css'
 import img from "./videoresource.jpeg";
 import { IoSearch } from "react-icons/io5";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 
 const apiKey = 'AIzaSyCc_sJxkrdB7l3-cd2RiWYOLx-UncJcwlk'; 
@@ -36,7 +37,6 @@ function YouTubeSearch() {
                     <div className="height flex">
                             <form onSubmit={handleSearch}>
                                 <div className="form">
-                                    {/* <i className="fa fa-search"></i> */}
                                     <input
                                         type="text"
                                         value={query}
@@ -45,7 +45,6 @@ function YouTubeSearch() {
                                         placeholder="Search anything..."
                                     />
                                     <span className="left-pan"><IoSearch style={{ fontSize: '24px',paddingLeft :'10px'}}/></span>
-                                    {/* <button type="submit" className="sbt">Search</button> */}
                                 </div>
                             </form>
                     </div>
@@ -70,6 +69,7 @@ function YouTubeSearch() {
                     </div>
                 ))}
             </div>
+            <Footer/>
         </div>
     );
 }

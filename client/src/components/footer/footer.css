@@ -1,0 +1,119 @@
+.unique-footer {
+    /* height: auto; */
+    padding-top: 20px;
+    background-color: #ebf2fa;
+}
+
+.unique-footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.unique-app-logo {
+    margin-left: 50px;
+    padding-left: 50px;
+    width: 300px;
+}
+
+.unique-app-info {
+    margin-right: 10px;
+    padding-left: 100px;
+    width: 1000px;
+}
+
+.unique-footer-logo img {
+    height: 61px;
+    width: 150px;
+    border-left: 6px solid #2d4bf0;
+    padding-left: 10px;
+    padding-right: 15px;
+    border-right: 6px solid #2d4bf0;
+}
+
+.unique-app-info p {
+    padding-bottom: 30px;
+    color: ffffff;
+    font-family: sans-serif;
+    padding-left: 20px;
+}
+
+.unique-useful-links {
+    margin: 60px;
+    width: 500px;
+    text-decoration: underline;
+    padding-right: 30px;
+}
+
+.unique-useful-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 10px;
+}
+
+.unique-links-title {
+    font-size: 1.40rem;
+    line-height: 1.30rem;
+    color: rgb(33, 28, 28);
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.unique-links-title-span {
+    font-size: 30px;
+    font-family: sans-serif;
+    padding-left: 10px;
+    border-left: 6px solid #2d4bf0;
+    padding-right: 10px;
+    border-right: 6px solid #2d4bf0;
+}
+
+.unique-useful-links ul li {
+    font-size: 18px;
+    padding: 3px;
+    font-family: sans-serif;
+    color: ffffff;
+}
+
+.unique-useful-links ul li a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.unique-useful-links ul li a:hover {
+    color: #111;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.unique-footer-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    width: 150px;
+    margin-left: 22px;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.unique-copyright {
+    background-color: #d6d9fd;
+    padding: 18px;
+    text-align: center;
+}
+
+.unique-copyright h3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(33, 28, 28);
+}
+
+.unique-copyright h3 a {
+    color: rgb(34, 91, 184);
+}
+
+.unique-copyright h3 a:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}

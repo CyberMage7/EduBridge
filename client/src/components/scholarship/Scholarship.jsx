@@ -1,6 +1,7 @@
 import React from 'react';
 import './scholarship.css';
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 function Scholarship() {
   return (
@@ -251,6 +252,7 @@ function Scholarship() {
         </div>
       </div>
      </div>
+     <Footer/>
     </>
   );
 }
