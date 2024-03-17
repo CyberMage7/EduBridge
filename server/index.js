@@ -117,6 +117,23 @@ app.post("/login", async (req, res) => {
   }
 });
 
+app.post("/donate", async (req, res) => {
+  const { Fname, email, phone, title, bookAuthor, quantity, category, description } = req.body;
+  try {
+    const result = await db.query(
+      "INSERT INTO donate (full_name, email, phone, title, author, quantity, genre, description) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)",
+      [Fname, email, phone, title, bookAuthor, quantity, category, description]
+    );
+    console.log(result);
+    res.send("Data saved successfully");
+    return res.send({success: true});
+   
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("Error occurred while saving data");
+    return res.send({success: false});
+  }
+});
 
 app.listen(PORT, () => {
   console.log('Server is running on PORT');
