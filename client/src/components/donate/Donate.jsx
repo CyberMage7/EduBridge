@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../navbar/Navbar';
 import axios from 'axios';
 import {Link , useNavigate} from "react-router-dom";
+import Footer from "../footer/Footer";
 import './donate.css';
 
 function DonateBookForm() {
@@ -21,8 +22,7 @@ function DonateBookForm() {
             const response = await axios.post("http://localhost:5000/donate", {
                 Fname, email, phone, title, bookAuthor, quantity, category, description
             });
-            console.log(response.data); // Log the response if needed
-            // Clear form after successful submission
+            console.log(response.data); 
             setFname('');
             setEmail('');
             setPhone('');
@@ -33,9 +33,9 @@ function DonateBookForm() {
             setDescription('');
 
             if (response.status === 200) {
-                navigate("/"); // Navigate to home if successful
+                navigate("/"); 
             } else {
-                navigate("/donate"); // Navigate back to the donate page if there's an error
+                navigate("/donate"); 
             }
             
         } catch (error) {
@@ -107,6 +107,7 @@ function DonateBookForm() {
                     <button type="submit" className="button-donate section-m2" name="submit">Submit</button>
                 </form>
             </div>
+            <Footer/>
         </>
     );
 }

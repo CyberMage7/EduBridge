@@ -17,17 +17,6 @@ function Body() {
   })
   return (
     <div className="App body-home">
-      {/* <div className="cont-header">
-        <div className="conts-head">
-          <h1 className='h1-body-type'>
-            Learning is
-            <span>{typeEffect}</span>
-          </h1>
-        </div>
-        <div className="conts-head">
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" alt="" />
-        </div>
-      </div> */}
       <section id="hero">
         <div className="text-content">
           <h2>Welcome to <span>LearnHub</span></h2>

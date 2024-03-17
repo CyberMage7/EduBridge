@@ -8,8 +8,8 @@ function Study() {
    <Navbar />
    <div className='body-study'>
       <section id="st-header-study">
-        <div className="heading">
-          <h1 className="underline1 h1-s">Study Material</h1>
+        <div className="heading-study">
+          <h1 className="underline1-study h1-s">Study Material</h1>
         </div>
       </section>
       <section>

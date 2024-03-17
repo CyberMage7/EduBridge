@@ -44,7 +44,6 @@ const About = () => {
                             <span>Vishwas Mishra</span>
                             <h4>Full-Stack Developer</h4>
                             <a href="https://github.com/CyberMage7">
-                                {/* <i className="fab fa-github"></i> */}
                                 <FaGithub/>
                                 </a>
                             <a href="https://www.linkedin.com/in/vishwas-mishra-4b6315257/"><FaLinkedin/></a>

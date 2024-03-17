@@ -18,7 +18,7 @@ const db = new pg.Client({
     port: 5432,
 });
 
-db.connect(); // Connect to the PostgreSQL database
+db.connect();
 
 const app = express();
 const PORT = 5000;
@@ -99,16 +99,13 @@ app.post("/login", async (req, res) => {
       const getPassword = result.rows[0].password;
       if (getPassword === password) {
         console.log("User Exist Login successful");
-        // Send success response (e.g., { success: true })
         return res.send({ success: true });
       } else {
         console.log("Incorrect Password");
-        // Send error response (e.g., { success: false, error: "Incorrect Password" })
         return res.send({ success: false, error: "Incorrect Password" });
       }
     } else {
       console.log("User not found");
-      // Send user not found response
       return res.send({ success: false, error: "User not found" });
     }
   } catch (err) {
