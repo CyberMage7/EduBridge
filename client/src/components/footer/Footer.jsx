@@ -36,8 +36,8 @@ function UniqueFooter() {
       </div>
       <div className="unique-copyright">
         <h3>
-          Copyright &copy; 2024 HealTech Crew | All rights reserved | Developed
-          By <a href="https://github.com/CyberMage7/Mercer">HealTech Crew</a>
+          Copyright &copy; 2024 Mystique Matrix | All rights reserved | Developed
+          By <a href="https://github.com/CyberMage7/Ride-Hack-24">Mystique Matrix</a>
         </h3>
       </div>
     </footer>
