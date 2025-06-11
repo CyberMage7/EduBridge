@@ -9,7 +9,7 @@ import Scholarship from "./components/scholarship/Scholarship";
 import Homepage from "./components/HomePage/Homepage";
 import Donate from "./components/donate/Donate";
 import YouTubeSearch from "./components/YtVideos/Yts";
-import Quiz from "./components/quiz/Quiz.";
+import Quiz from "./components/quiz/Quiz";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/about/About";
 
