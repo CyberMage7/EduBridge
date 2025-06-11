@@ -122,13 +122,11 @@ app.post("/donate", async (req, res) => {
       [Fname, email, phone, title, bookAuthor, quantity, category, description]
     );
     console.log(result);
-    res.send("Data saved successfully");
-    return res.send({success: true});
+    return res.status(200).json({success: true, message: "Data saved successfully"});
    
   } catch (error) {
     console.log(error);
-    res.status(500).send("Error occurred while saving data");
-    return res.send({success: false});
+    return res.status(500).json({success: false, message: "Error occurred while saving data"});
   }
 });
 
