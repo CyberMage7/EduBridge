@@ -161,13 +161,3 @@ Contributions are always welcome! Follow these steps to contribute:
 5. Open a Pull Request
 
 ---
-
-<div align="center">
-  <p>Made with ❤️ by Team Mystique Matrix</p>
-  <p>© 2025 EduBridge - Empowering Education for All</p>
-</div>
-
-<div align="center">
-  <p>Made with ❤️ by Team Mystique Matrix</p>
-  <p>© 2025 EduBridge - Empowering Education for All</p>
-</div>
