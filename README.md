@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![EduBridge Logo](client/src/assets/logo.png)
+<img src="client/src/assets/logo.png" width="250" alt="EduBridge Logo">
 
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-16.x-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
@@ -159,43 +159,6 @@ Contributions are always welcome! Follow these steps to contribute:
 3. Commit your changes (`git commit -m 'Add some amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
-
-## 👥 Team
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/username1">
-          <img src="client/src/assets/devloper1.jpeg" width="100" alt="Developer 1">
-          <br>
-          <sub><b>Developer 1</b></sub>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/username2">
-          <img src="client/src/assets/devloper2.jpg" width="100" alt="Developer 2">
-          <br>
-          <sub><b>Developer 2</b></sub>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/username3">
-          <img src="client/src/assets/devloper3.jpg" width="100" alt="Developer 3">
-          <br>
-          <sub><b>Developer 3</b></sub>
-        </a>
-      </td>
-      <td align="center">
-        <a href="https://github.com/username4">
-          <img src="client/src/assets/devloper4.jpg" width="100" alt="Developer 4">
-          <br>
-          <sub><b>Developer 4</b></sub>
-        </a>
-      </td>
-    </tr>
-  </table>
-</div>
 
 ---
 
