@@ -19,7 +19,7 @@ function Body() {
     <div className="App body-home">
       <section id="hero">
         <div className="text-content">
-          <h2>Welcome to <span>LearnHub</span></h2>
+          <h2>Welcome to <span>EduBridge</span></h2>
           {/* <h4>where</h4> */}
           <h1>Learning is
             <span>{typeEffect}</span></h1>

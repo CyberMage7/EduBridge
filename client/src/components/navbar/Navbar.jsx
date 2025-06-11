@@ -26,7 +26,7 @@ function Navbar() {
               {isDropdownOpen && (
                 <div className="dropdown-content">
                   <p>Phone: <br />+91 9996103246</p>
-                  <p>Email: learnhub@gmail.com</p>
+                  <p>Email: edubridge@gmail.com</p>
                   <p>Address: Jaypee Institute Of Information Tecgnology,Noida,Uttar Pradesh</p>
                 </div>
               )}

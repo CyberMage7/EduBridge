@@ -1,5 +1,5 @@
-# Learn Hub
-Welcome to the Project 'LearnHub' ! Our website is a one-stop solution catering to the educational needs of underprivileged students in grades 6 to 10. We facilitate book donations, offer study materials, including NCERT books, and provide customized video tutorials to address individual doubts along with doubt engine to solve doubts. We also provide a features in which peers can connect ,via video calling, on our platform to discuss their doubts and study together. Our platform also features quizzes to further enrich the learning journey for these students.
+# EduBridge
+Welcome to the Project 'EduBridge' ! Our website is a one-stop solution catering to the educational needs of underprivileged students in grades 6 to 10. We facilitate book donations, offer study materials, including NCERT books, and provide customized video tutorials to address individual doubts along with doubt engine to solve doubts. We also provide a features in which peers can connect ,via video calling, on our platform to discuss their doubts and study together. Our platform also features quizzes to further enrich the learning journey for these students.
 ### Website Demo Tutorial: [Click Here](https://youtu.be/8E_Pn3xXJY4?si=m25DqJthXZ-orm4K)
 
 ## Table of Contents

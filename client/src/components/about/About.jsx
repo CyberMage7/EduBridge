@@ -19,7 +19,7 @@ const About = () => {
                 <img src={studentimg} alt="About Us" />
                 <div>
                     <h2>Who We Are</h2>
-                    <p>Welcome to 'Learn Hub' , where you can learn at your own pace. We Provide The Guide Book by NCERT, doubt engine to solve 
+                    <p>Welcome to 'EduBridge' , where you can learn at your own pace. We Provide The Guide Book by NCERT, doubt engine to solve 
                         their doubts, videos they can search according to their own topic required. Our mission is to help students learn while the distractions stay away from them.
                     </p>
                     <abbr title="">Empowering students through a user-friendly web platform platform which will help them 
