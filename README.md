@@ -1,117 +1,210 @@
 # EduBridge
-Welcome to the Project 'EduBridge' ! Our website is a one-stop solution catering to the educational needs of underprivileged students in grades 6 to 10. We facilitate book donations, offer study materials, including NCERT books, and provide customized video tutorials to address individual doubts along with doubt engine to solve doubts. We also provide a features in which peers can connect ,via video calling, on our platform to discuss their doubts and study together. Our platform also features quizzes to further enrich the learning journey for these students.
-### Website Demo Tutorial: [Click Here](https://youtu.be/8E_Pn3xXJY4?si=m25DqJthXZ-orm4K)
 
-## Table of Contents
-- Introduction
-- Features
-- Tech Stacks
-- Installation
-- Contributing
+<div align="center">
 
+![EduBridge Logo](client/src/assets/logo.png)
 
-## Features
-- *Study Materials*: We provide books for class 6 to class 10 at one place which is tiring to find on NCERT Website.
+[![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-16.x-339933?style=for-the-badge&logo=node.js)](https://nodejs.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-14.x-4169E1?style=for-the-badge&logo=postgresql)](https://www.postgresql.org/)
+[![Express](https://img.shields.io/badge/Express-4.x-000000?style=for-the-badge&logo=express)](https://expressjs.com/)
 
-- *Videos*: By using Youtube API, user can search any related video they want to study so that the recommendations of youtube get avoided.
+**Bridging the educational gap for underprivileged students in grades 6-10**
 
-- *Quizzes*: We will be providing quizzes to the users along with thier personal dashboard so that they can test and analyze their knowledge.
+</div>
 
-- *Doubt Engine*: We have provided a Bot Feature in which user can input any type of doubt and will get the answer instantly.
+## 📚 Overview
 
-- *Scholarships*: We have provided various scholarship information provided by the Goverment so that the needy can get much needed education without taking tension of monetary expenses.
+EduBridge is a comprehensive educational platform designed specifically for underprivileged students in grades 6 to 10. Our mission is to make quality education accessible to all by providing a unified platform that includes study materials, interactive learning tools, peer collaboration features, and academic support systems.
 
-- *Book Donation*: We have provided a feature in which any user can donate the books which are no use of them but would be very helfpul for the needy who are willing to study.
+## ✨ Key Features
 
-- *Video Calling*: We have provided a feature in which peers can video call among themselves to study together and solve doubts together.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="client/src/assets/book.png" width="50" alt="Study Materials">
+        <br>
+        <b>Study Materials</b>
+      </td>
+      <td align="center">
+        <img src="client/src/assets/video-call.png" width="50" alt="Video Calling">
+        <br>
+        <b>Peer Video Calling</b>
+      </td>
+      <td align="center">
+        <img src="client/src/assets/graduation-outline.png" width="50" alt="Quizzes">
+        <br>
+        <b>Interactive Quizzes</b>
+      </td>
+      <td align="center">
+        <img src="client/src/assets/scholarship.png" width="50" alt="Scholarships">
+        <br>
+        <b>Scholarship Info</b>
+      </td>
+    </tr>
+  </table>
+</div>
 
-## Tech Stacks
-- Frontend:
-  - ReactJS
-  - CSS
+- **📖 Study Materials**: Centralized access to NCERT books for classes 6-10, eliminating the need to navigate through the complex NCERT website.
 
-- Backend:
-  - Node.js (Express)
-  - Postgre SQL
+- **🎥 Educational Videos**: Integrated YouTube API for focused educational content search without distracting recommendations.
 
-# Installation
+- **📝 Interactive Quizzes**: Self-assessment tools with personalized dashboards to track progress and identify areas for improvement.
 
-### Fork this repository
+- **🤖 AI-Powered Doubt Engine**: Instant doubt resolution through an intelligent bot that provides accurate answers to academic questions.
 
-Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
+- **🏆 Scholarship Information**: Comprehensive database of government scholarships to help students access financial aid for education.
 
-### Clone the repository
+- **📚 Book Donation Platform**: Connects book donors with students in need, promoting resource sharing and sustainability.
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/clone.png" alt="clone this repository" />
+- **👥 Peer Learning**: Video calling feature that enables students to collaborate, study together, and resolve doubts through peer discussions.
 
-Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the copy to clipboard icon.
+## 🛠️ Technology Stack
 
-Open a terminal and run the following git command:
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><b>Frontend</b></td>
+      <td align="center"><b>Backend</b></td>
+      <td align="center"><b>Database</b></td>
+    </tr>
+    <tr>
+      <td align="center">
+        React.js
+      </td>
+      <td align="center">
+        Node.js (Express)
+      </td>
+      <td align="center">
+        PostgreSQL
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        CSS3
+      </td>
+      <td align="center">
+        JavaScript
+      </td>
+      <td align="center">
+        RESTful API
+      </td>
+    </tr>
+  </table>
+</div>
 
+## 🚀 Installation Guide
 
-git clone "url you just copied"
+### Prerequisites
+- Node.js (v14 or higher)
+- PostgreSQL
+- pgAdmin4
 
+### Step 1: Clone the Repository
 
-where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
+```bash
+git clone https://github.com/your-username/EduBridge.git
+cd EduBridge
+```
 
-<img align="right" width="300" src="https://firstcontributions.github.io/assets/Readme/copy-to-clipboard.png" alt="copy URL to clipboard" />
+### Step 2: Set Up Frontend
 
-For example:
-
-
-git clone https://github.com/your-name/Mercer.git
-
-
-where your-name is your GitHub username. Here you're copying the contents of the our repository from GitHub to your computer.
-
-## To Run the Website
-Your System must have
-- Node.JS
-- Postgre SQL
-
-### To Run Frontend:
-
-Navigate to client repository:
-
+```bash
 cd client
-
-Run the following command to download the required modules
-
-npm i
-
-After that run the following to host the website on local server http://localhost:3000/
-
+npm install
 npm start
+```
+Your frontend will be running at http://localhost:3000/
 
-### To Run the BackEnd
-Open a New Terminal and Navigate to server repository:
+### Step 3: Set Up Backend
 
-cd server
+```bash
+cd ../server
+npm install
+nodemon index.js  # or node index.js if nodemon is not installed
+```
+Your backend will be running at http://localhost:5000/
 
-Run the following command to download the required modules
+### Step 4: Import the Database
 
-npm i
+1. Open pgAdmin4
+2. Right-click on Databases and create a new database named "Mercer"
+3. Right-click on the "Mercer" database and select "Restore"
+4. Select the database file `db.sql`
+5. Choose format as "custom" or "tar"
+6. Click "Restore"
 
-After that run the following to host run the backend on local server http://localhost:5000/ and http://localhost:5432/
+## 📱 App Screenshots
 
-nodemon index.js
+<div align="center">
+  <table>
+    <tr>
+      <td><img src="client/src/assets/homeimg.png" width="400" alt="Home Page"></td>
+      <td><img src="client/src/assets/student.png" width="400" alt="Student Dashboard"></td>
+    </tr>
+    <tr>
+      <td align="center"><b>Home Page</b></td>
+      <td align="center"><b>Student Dashboard</b></td>
+    </tr>
+  </table>
+</div>
 
-If in your system, the above command doesn't work, run the following command
+## 🤝 Contributing
 
-node index.js
+Contributions are always welcome! Follow these steps to contribute:
 
-### To import the database
-1. Open the pgAdmin4
-2. Right Click on Database "Mercer"
-3. Select the restore option from the dropdown menu
-4. Select the database file db.sql
-5. Select the format as custom or tar
-6. Click on Restore
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
+## 👥 Team
 
-*Now You Are all Set to Use Our Website. Enjoy !!*
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <a href="https://github.com/username1">
+          <img src="client/src/assets/devloper1.jpeg" width="100" alt="Developer 1">
+          <br>
+          <sub><b>Developer 1</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/username2">
+          <img src="client/src/assets/devloper2.jpg" width="100" alt="Developer 2">
+          <br>
+          <sub><b>Developer 2</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/username3">
+          <img src="client/src/assets/devloper3.jpg" width="100" alt="Developer 3">
+          <br>
+          <sub><b>Developer 3</b></sub>
+        </a>
+      </td>
+      <td align="center">
+        <a href="https://github.com/username4">
+          <img src="client/src/assets/devloper4.jpg" width="100" alt="Developer 4">
+          <br>
+          <sub><b>Developer 4</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
 
+---
 
-# Contributing
-Contributions are Welcome! If you'd like to contribute to the project, please follow the General Contribution Guidelines.
+<div align="center">
+  <p>Made with ❤️ by Team Mystique Matrix</p>
+  <p>© 2025 EduBridge - Empowering Education for All</p>
+</div>
+
+<div align="center">
+  <p>Made with ❤️ by Team Mystique Matrix</p>
+  <p>© 2025 EduBridge - Empowering Education for All</p>
+</div>
