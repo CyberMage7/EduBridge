@@ -3,6 +3,7 @@ import "./signup.css";
 import { Link ,useNavigate} from "react-router-dom";
 import axios from "axios";
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
+import { useAuth } from "../context/AuthContext";
 
 function Signup() {
   const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ function Signup() {
   const [fname, setFname] = useState("");
   const [lname, setLname] = useState("");
   const navigate=useNavigate();
-
+  const { login } = useAuth();
   async function handleSubmit(e) {
     e.preventDefault();
 
@@ -20,10 +21,12 @@ function Signup() {
         lname,
         email,
         password,
-      });
-
-      if (response.data.success) {
-        navigate("/login");
+      });      if (response.data.success) {
+        // Auto login after successful signup
+        // Create a full name from first and last name
+        const fullName = `${fname} ${lname}`;
+        login(email, fullName);
+        navigate("/");
       }
       else {
         navigate("/signup");

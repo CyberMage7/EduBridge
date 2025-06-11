@@ -67,9 +67,7 @@ app.post("/signup", async (req, res) => {
   const { fname, lname, password, email } = req.body;
 
   try {
-    console.log("Received form data:", { fname, lname, password, email });
-
-    const check = await db.query("SELECT * FROM signup WHERE email = $1", [email]);
+    console.log("Received form data:", { fname, lname, password, email });    const check = await db.query("SELECT * FROM signup WHERE email = $1", [email]);
     if (check.rows.length > 0) {
       return res.send({ success: true });
       
@@ -79,7 +77,14 @@ app.post("/signup", async (req, res) => {
         [fname, lname, email, password]
       );
       console.log("Signup Successful:", result.rows);
-      return res.send({ success: true });
+      return res.send({ 
+        success: true,
+        user: {
+          first_name: fname,
+          last_name: lname,
+          email: email
+        }
+      });
     }
   } catch (err) {
     console.error("Error during signup:", err);
@@ -90,8 +95,7 @@ app.post("/signup", async (req, res) => {
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
-  try {
-    const result = await db.query(
+  try {    const result = await db.query(
       "SELECT * FROM signup WHERE email = $1",
       [email]
     );
@@ -99,7 +103,13 @@ app.post("/login", async (req, res) => {
       const getPassword = result.rows[0].password;
       if (getPassword === password) {
         console.log("User Exist Login successful");
-        return res.send({ success: true });
+        // Send user data along with success response
+        const userData = {
+          first_name: result.rows[0].first_name,
+          last_name: result.rows[0].last_name,
+          email: result.rows[0].email
+        };
+        return res.send({ success: true, user: userData });
       } else {
         console.log("Incorrect Password");
         return res.send({ success: false, error: "Incorrect Password" });

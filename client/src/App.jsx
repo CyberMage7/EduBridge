@@ -12,22 +12,26 @@ import YouTubeSearch from "./components/YtVideos/Yts";
 import Quiz from "./components/quiz/Quiz";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/about/About";
+import { AuthProvider } from "./components/context/AuthContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/scholarship" element={<Scholarship />} />
-        <Route path="/study" element={<Study />} />
-        <Route path="/Lobby" element={<LobbyScreen />} />
-        <Route path="/room/:roomId" element={<RoomPage />} />
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>        <Route path="/donate" element={<Donate />}></Route>
-        <Route path="/about" element={<About />}></Route>
-        <Route path="/video" element={<YouTubeSearch />}></Route>
-        <Route path="/quiz" element={<Quiz />}></Route>
-      </Routes>
+      <AuthProvider>
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/scholarship" element={<Scholarship />} />
+          <Route path="/study" element={<Study />} />
+          <Route path="/Lobby" element={<LobbyScreen />} />
+          <Route path="/room/:roomId" element={<RoomPage />} />
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/donate" element={<Donate />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/video" element={<YouTubeSearch />}></Route>
+          <Route path="/quiz" element={<Quiz />}></Route>
+        </Routes>
+      </AuthProvider>
     </BrowserRouter>
   );
 }

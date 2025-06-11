@@ -121,8 +121,39 @@
 .bn632-hover.bn26 {
 	background-image: linear-gradient(to right,
 			#25aae1,
-			#4481eb,
-			#04befe,
+			#4481eb,			#04befe,
 			#3f86ed);
 	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+
+.logout-btn {
+    background-image: linear-gradient(to right,
+            #e12525,
+            #eb4444,
+            #fe0404,
+            #ed3f3f);
+    box-shadow: 0 4px 15px 0 rgba(234, 65, 65, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #088178;
+    background-color: rgba(8, 129, 120, 0.1);
+    padding: 6px 12px;
+    border-radius: 20px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

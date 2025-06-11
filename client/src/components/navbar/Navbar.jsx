@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
-import { FaUser } from "react-icons/fa";
-import { FaUserCheck } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { FaUser, FaUserCheck, FaSignOutAlt } from "react-icons/fa";
+import { useAuth } from "../context/AuthContext";
 
 
-function Navbar() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+function Navbar() {  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const navigate = useNavigate();
+  const { isLoggedIn, userName, logout } = useAuth();
+
+  const handleLogout = () => {
+    logout();
+    navigate('/');
+  };
 
   return (
     <div className="containers-n">
@@ -31,18 +37,28 @@ function Navbar() {
                 </div>
               )}
             </li>
-          </Link>
-          <Link to="/about">
+          </Link>          <Link to="/about">
             <li className="li-navbar">About</li>
-          </Link>
-        </ul>
-        <div className="button-nav">
-          <Link to="./login">
-            <button className="bn632-hover bn26">Login <FaUser /></button>
-          </Link>
-          <Link to="./signup">
-            <button className="bn632-hover bn26">SignUp <FaUserCheck /></button>
-          </Link>
+          </Link>        </ul>
+        <div className="button-nav">          {isLoggedIn ? (
+            <>
+              <div className="user-info">
+                <span className="user-name">{userName || 'User'}</span>
+              </div>
+              <button onClick={handleLogout} className="bn632-hover bn26 logout-btn">
+                Logout <FaSignOutAlt />
+              </button>
+            </>
+          ) : (
+            <>
+              <Link to="./login">
+                <button className="bn632-hover bn26">Login <FaUser /></button>
+              </Link>
+              <Link to="./signup">
+                <button className="bn632-hover bn26">SignUp <FaUserCheck /></button>
+              </Link>
+            </>
+          )}
         </div>
       </div>
       <div className="button-nav"></div>

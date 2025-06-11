@@ -3,23 +3,33 @@ import "./login.css";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { FaEnvelope, FaLock } from 'react-icons/fa';
+import { useAuth } from "../context/AuthContext";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-
+  const { login } = useAuth();
 
   async function handleSubmit(e) {
-    e.preventDefault();
-
-    try {
+    e.preventDefault();    try {
       const response = await axios.post("http://localhost:5000/login", {
         email,
-        password,
-      });
-
-      if (response.data.success) {
+        password,      });      if (response.data.success) {
+        // Extract user data from response
+        const userData = response.data.user || {};
+        
+        // Get first and last name from response
+        const firstName = userData.first_name || '';
+        const lastName = userData.last_name || '';
+        
+        // Create full name (or use first name only if preferred)
+        const fullName = firstName && lastName ? `${firstName} ${lastName}` : firstName || 'User';
+        
+        console.log("Login successful for:", fullName);
+        
+        // Use the context's login function with name
+        login(email, fullName);
         navigate("/");
       }
       else {
