@@ -52,12 +52,11 @@ function Body() {
               <a href="scholarship" className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
-              <img src={quizimg} alt="s3" />
-              <h3>Quizzes</h3>
+              <img src={quizimg} alt="s3" />              <h3>Quizzes</h3>
               <p>
                 Pinpoint knowledge gaps and improve understanding with personalized quiz feedback.
               </p>
-              <a className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
+              <a href="/quiz" className="secondary-button">Learn more <i className="fa-solid fa-right-long"></i></a>
             </div>
             <div className="features-card flex">
               <img src={videoimg} alt="s4" />

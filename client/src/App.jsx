@@ -9,6 +9,7 @@ import Scholarship from "./components/scholarship/Scholarship";
 import Homepage from "./components/HomePage/Homepage";
 import Donate from "./components/donate/Donate";
 import YouTubeSearch from "./components/YtVideos/Yts";
+import Quiz from "./components/quiz/Quiz.";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./components/about/About";
 
@@ -22,10 +23,10 @@ function App() {
         <Route path="/Lobby" element={<LobbyScreen />} />
         <Route path="/room/:roomId" element={<RoomPage />} />
         <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/donate" element={<Donate />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>        <Route path="/donate" element={<Donate />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/video" element={<YouTubeSearch />}></Route>
+        <Route path="/quiz" element={<Quiz />}></Route>
       </Routes>
     </BrowserRouter>
   );
