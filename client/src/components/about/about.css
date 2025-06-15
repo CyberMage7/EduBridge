@@ -3,7 +3,7 @@
 }
 
 .body-about {
-    padding-top: 90px;
+    padding-top: .5rem;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     min-height: 100vh;
 }
