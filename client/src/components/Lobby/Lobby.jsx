@@ -15,6 +15,8 @@ const LobbyScreen = () => {
   const handleSubmitForm = useCallback(
     (e) => {
       e.preventDefault();
+      // Store email in localStorage for use in Room component
+      localStorage.setItem("userEmail", email);
       socket.emit("room:join", { email, room });
     },
     [email, room, socket]

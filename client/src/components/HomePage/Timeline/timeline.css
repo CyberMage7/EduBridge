@@ -1,13 +1,141 @@
-.Vertical-timeline
-{
-    background-color: aliceblue;
+.Vertical-timeline {
+    background: linear-gradient(135deg, #f8faff 0%, #e8f0fe 100%);
+    padding: 40px 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
 }
 
-.a-time{
-    text-decoration: underline;
-    color:black;
+.Vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
 }
 
-.vertical-timeline-element--work,.vertical-timeline-element--education{
-    margin: 100px;
+.vertical-timeline-element-content {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 15px !important;
+    box-shadow: 0 8px 25px rgba(45, 75, 240, 0.1) !important;
+    border: 1px solid rgba(45, 75, 240, 0.1) !important;
+    transition: all 0.3s ease !important;
+}
+
+.vertical-timeline-element-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(45, 75, 240, 0.15) !important;
+}
+
+.vertical-timeline-element-title {
+    color: #1a237e !important;
+    font-weight: 700 !important;
+    font-size: 22px !important;
+    margin-bottom: 8px !important;
+}
+
+.vertical-timeline-element-subtitle {
+    color: rgba(51, 51, 51, 0.8) !important;
+    font-weight: 500 !important;
+    font-size: 16px !important;
+    margin-bottom: 12px !important;
+    line-height: 1.4 !important;
+}
+
+.vertical-timeline-element-content p {
+    color: rgba(51, 51, 51, 0.9) !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+}
+
+.a-time {
+    text-decoration: underline !important;
+    color: #e65100 !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+}
+
+.a-time:hover {
+    color: #bf360c !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.vertical-timeline-element--work,
+.vertical-timeline-element--education {
+    margin: 40px 0 !important;
+}
+
+.vertical-timeline-element-date {
+    color: rgba(51, 51, 51, 0.8) !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+}
+
+/* Timeline line styling */
+.vertical-timeline::before {
+    background: linear-gradient(to bottom, 
+        rgba(45, 75, 240, 0.3) 0%, 
+        rgba(45, 75, 240, 0.1) 50%, 
+        rgba(45, 75, 240, 0.3) 100%) !important;
+    width: 4px !important;
+    z-index: 1 !important;
+}
+
+/* Icon styling improvements */
+.vertical-timeline-element-icon {
+    box-shadow: 0 4px 15px rgba(45, 75, 240, 0.3) !important;
+    transition: all 0.3s ease !important;
+    background: rgb(33, 150, 243) !important;
+    border: 3px solid #ffffff !important;
+    z-index: 10 !important;
+}
+
+.vertical-timeline-element-icon svg {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    font-weight: 900 !important;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3)) !important;
+}
+
+.vertical-timeline-element-icon:hover {
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 20px rgba(45, 75, 240, 0.4) !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 1170px) {
+    .Vertical-timeline {
+        padding: 30px 15px;
+        margin: 15px;
+        border-radius: 15px;
+    }
+    
+    .vertical-timeline-element--work,
+    .vertical-timeline-element--education {
+        margin: 30px 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .Vertical-timeline {
+        padding: 20px 10px;
+        margin: 10px;
+    }
+    
+    .vertical-timeline-element-title {
+        font-size: 20px !important;
+    }
+    
+    .vertical-timeline-element-subtitle {
+        font-size: 15px !important;
+    }
 }

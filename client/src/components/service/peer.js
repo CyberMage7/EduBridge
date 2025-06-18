@@ -36,6 +36,23 @@ class PeerService {
       return offer;
     }
   }
+
+  // New method to reset the peer connection
+  resetConnection() {
+    if (this.peer) {
+      this.peer.close();
+    }
+    this.peer = new RTCPeerConnection({
+      iceServers: [
+        {
+          urls: [
+            "stun:stun.l.google.com:19302",
+            "stun:global.stun.twilio.com:3478",
+          ],
+        },
+      ],
+    });
+  }
 }
 
 export default new PeerService();

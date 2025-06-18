@@ -2,86 +2,506 @@
     padding: 40px 80px;
 }
 
-.body-about{
-    padding-top: 90px;
+.body-about {
+    padding-top: .5rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
 }
 
 #about-head img {
     width: 50%;
     height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 #about-head {
     display: flex;
     align-items: center;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 #about-head div {
     padding: 40px;
-    color: black;
+    color: #333;
 }
 
-#develop {
-    text-align: center;
-    margin: 30px;
+#about-head h2 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-#develop .dev-container {
+#about-head p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#about-head abbr {
+    font-size: 1.2em;
+    color: #3498db;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* Mission Vision Section */
+#mission-vision {
+    margin: 40px 0;
+}
+
+.mission-container {
     display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
+    gap: 30px;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-#develop .pro {
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 7px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 5px 0;
-    transition: 0.2s ease;
+.mission-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.mission-icon {
+    font-size: 3em;
+    color: #3498db;
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+/* What We Offer Section - Timeline Style */
+#what-we-offer {
+    margin: 60px 0;
+    padding: 80px;
+    background: white;
+    border-radius: 0;
+}
+
+.features-showcase {
+    padding: 60px 0;
+}
+
+.feature-timeline {
+    max-width: 800px;
+    margin: 0 auto;
     position: relative;
 }
 
-#develop .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+.feature-timeline::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #3498db, #2c3e50);
 }
 
-#develop .pro img {
-    width: 100%;
-    border-radius: 20px;
+.timeline-item {
+    display: flex;
+    margin: 40px 0;
+    position: relative;
 }
 
-#develop .pro .des {
-    text-align: start;
-    padding: 10px 0;
+.timeline-marker {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    flex-shrink: 0;
+    z-index: 2;
+    border: 4px solid white;
 }
 
-#develop .pro .des span {
-    color: #606063;
-    font-size: 30px;
+.timeline-marker img {
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) invert(1);
 }
 
-#develop .pro .des h5 {
-    padding-top: 7px;
-    color: #1a1a1a;
-    font-size: 14px;
+.timeline-marker svg {
+    font-size: 2em;
+    color: white;
 }
 
-#develop .pro .des h4 {
-    padding: 2px 0px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #088178;
+.timeline-content {
+    flex: 1;
+    padding: 20px 0;
 }
 
-.des a{
-    text-decoration: none;
-    color: black;
-    /* display: flex; */
-    padding-left: 90px;
-    justify-content: space-between;
+.timeline-content h3 {
+    color: #2c3e50;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1em;
+}
+
+/* Impact Section - Clean Design */
+#impact {
+    padding: 60px 80px 40px 80px;
+    background: white;
+    margin: 60px 0 0 0;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #e9ecef;
+    border-bottom: none;
+}
+
+.impact-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.impact-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 12px;
+    border: 1px solid #e3e8ed;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.impact-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    transition: width 0.3s ease;
+}
+
+.impact-item:hover {
+    transform: translateX(3px);
+    border-color: #3498db;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+.impact-item:hover::before {
+    width: 5px;
+}
+
+.impact-icon {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.impact-item:hover .impact-icon {
+    transform: scale(1.05);
+}
+
+.impact-icon svg {
+    font-size: 1.4em;
+    color: white;
+}
+
+.impact-text {
+    flex: 1;
+}
+
+.impact-text h3 {
+    color: #2c3e50;
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.impact-item:hover .impact-text h3 {
+    color: #3498db;
+}
+
+.impact-text p {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Why Choose Section - Clean Grid */
+#why-choose {
+    padding: 40px 80px 80px 80px;
+    background: #f8f9fa;
+    margin: 0;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid #e9ecef;
+    border-top: none;
+}
+
+.why-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.why-header h2 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.why-header p {
+    color: #666;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e9ecef;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.benefit-item h4 {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Features header styling */
+.features-header {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.features-heading-text {
+    font-size: 2.5em;
+    color: #2c3e50;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.underline1 {
+    position: relative;
+}
+
+.underline1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(45deg, #3498db, #2c3e50);
+    border-radius: 2px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-p1 {
+        padding: 20px 40px;
+    }
+    
+    #about-head {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #about-head img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .mission-container {
+        flex-direction: column;
+    }
+    
+    #what-we-offer {
+        padding: 0 20px;
+    }
+    
+    .features-showcase {
+        padding: 40px 0;
+    }
+    
+    .feature-timeline::before {
+        left: 25px;
+    }
+    
+    .timeline-marker {
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
+    
+    .timeline-marker img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .timeline-marker svg {
+        font-size: 1.5em;
+    }
+    
+    .timeline-content h3 {
+        font-size: 1.2em;
+    }
+    
+    #why-choose {
+        padding: 40px 20px;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    #impact {
+        padding: 40px 20px 20px 20px;
+        margin: 20px 20px 0 20px;
+        border-radius: 15px 15px 0 0;
+    }
+    
+    .impact-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 18px 15px;
+        margin-bottom: 15px;
+    }
+
+    .impact-item::before {
+        width: 100%;
+        height: 3px;
+        top: 0;
+        left: 0;
+    }
+
+    .impact-item:hover::before {
+        height: 4px;
+    }
+
+    .impact-item:hover {
+        transform: translateY(-2px);
+    }
+    
+    .impact-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .impact-icon svg {
+        font-size: 1.3em;
+    }
+    
+    .impact-text h3 {
+        font-size: 1.2em;
+    }
+    
+    .impact-text p {
+        font-size: 0.95em;
+    }
+    
+    #why-choose {
+        padding: 20px 20px 40px 20px;
+        margin: 0 20px 20px 20px;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .features-heading-text, .impact-title, .why-container h2 {
+        font-size: 2em;
+    }
 }

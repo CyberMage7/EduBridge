@@ -1,4 +1,6 @@
-import { useTypewriter} from 'react-simple-typewriter'
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import "./body.css";
 import homeimg from "../../../assets/homeimg.png";
 import studyimg from "../../../assets/book.png";
@@ -7,6 +9,7 @@ import quizimg from "../../../assets/asset 14.svg";
 import videoimg from "../../../assets/asset 15.svg";
 import donateimg from "../../../assets/video-call.png";
 import doubtimg from "../../../assets/asset 16.svg";
+import { useAuth } from "../../context/AuthContext";
 
 function Body() {
   const [typeEffect] = useTypewriter({
@@ -14,15 +17,24 @@ function Body() {
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 40
-  })
+  });
+
+  const { isLoggedIn, userName, logout } = useAuth();
+
   return (
     <div className="App body-home">
       <section id="hero">
         <div className="text-content">
           <h2>Welcome to <span>EduBridge</span></h2>
-          {/* <h4>where</h4> */}
-          <h1>Learning is
-            <span>{typeEffect}</span></h1>
+          <h1>Learning is 
+            <span>{typeEffect}</span>
+            <Cursor cursorStyle="_" />
+          </h1>
+          <p>Empowering students through accessible education resources and community learning.</p>
+          
+          {!isLoggedIn && (
+            <Link to="/login" className="login-button">Get Started</Link>
+          )}
         </div>
         <div className="image-container">
           <img src={homeimg} alt="Background Image" />
